@@ -1,4 +1,4 @@
-# Lab 08: Build an interactive financial performance dashboard with intelligence sheets in Plan for Microsoft Fabric
+## Lab 08: Build an interactive financial performance dashboard with Intelligence Sheets
 
 ## Introduction
 
