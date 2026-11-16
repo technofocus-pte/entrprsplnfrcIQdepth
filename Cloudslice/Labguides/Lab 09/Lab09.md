@@ -1,4 +1,4 @@
-# Lab 09: Build a P&L statement with calculated rows, approvals, and export using intelligence sheets in Plan for Microsoft Fabric
+# Lab 09: Build and export a P&L statement with Intelligence Sheet
 
 ## Introduction
 
