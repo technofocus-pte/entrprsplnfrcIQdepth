@@ -775,13 +775,6 @@ In this task, you delete the workspace that contains the lab items, including th
     Fabric deletes the workspace and removes it from the **Workspaces** list.
 
 
-## Summary
-
-In this lab, you added checks and balances to the asset management app to maintain data quality. You completed the following tasks:
-- Set up an approval workflow that routes data changes through a review process.
-- Set up access controls that restrict insert, update, and delete operations to authorized users.
-- Set up an automation workflow that updates rows when a user selects a button.
-
 
 ## Summary
 
