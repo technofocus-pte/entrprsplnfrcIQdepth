@@ -1,4 +1,4 @@
-# Lab 10: Build an integrated planning canvas with what-if simulation, PowerTable, and intelligence sheets in Plan for Microsoft Fabric
+# Lab 10: Build an integrated planning canvas with what-if simulation, PowerTable, and Intelligence Sheets 
 
 ## Introduction
 
