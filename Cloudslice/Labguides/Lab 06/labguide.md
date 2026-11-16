@@ -42,10 +42,6 @@ To complete this lab, you need:
 - An organizational account to create the Fabric Plan connection.
 
 
-## Scenario
-
-Acme Beverages tracks its asset data in spreadsheets. The company needs an asset management data app. In this lab, you move the asset data into a database. You then manage the data with a mini data app in Microsoft Fabric that uses Fabric Plan.
-
 ## Exercise 1: Create the Fabric SQL database and Fabric Plan item
 
 In this exercise, you create the Fabric SQL database that the PowerTable app uses for data management and the Fabric Plan item that holds the PowerTable app.
@@ -1162,7 +1158,7 @@ In this task, you set PowerTable to open a form when you insert a row. A form sh
     PowerTable saves the new row to the database.
 
 
-### Task 3: (Optional) Update a single row with the Form Editor
+### Task 3: Update a single row with the Form Editor
 
 In this optional task, you use the **Form Editor** to change the values of one existing record. The form shows every field of the record in one pane, so you can update the record without scrolling across the sheet.
 
@@ -1191,7 +1187,7 @@ In this optional task, you use the **Form Editor** to change the values of one e
     >[!Note] Selecting **Apply** doesn't save the change to the database. It creates a pending change. You can combine pending changes with other edits, and then save, preview, or discard them together.
 
 
-### Task 4: (Optional) Update multiple rows with the Form Editor
+### Task 4: Update multiple rows with the Form Editor
 
 In this optional task, you use the **Form Editor** to update the same fields across several records at once. You apply a shared change, such as a new location or status, to a group of assets in one step. When you edit multiple rows, only the fields that you edit change, and all other fields keep their current values.
 
@@ -1214,7 +1210,7 @@ In this optional task, you use the **Form Editor** to update the same fields acr
     The selected rows show the new **Location** and **Status** values, and the count on the **Preview Changes** button increases.
 
 
-### Task 5: (Optional) Update multiple rows with Bulk Edit
+### Task 5:Update multiple rows with Bulk Edit
 
 In this optional task, you use **Bulk Edit** to apply several actions to a group of selected rows. Bulk actions can offset values, set new values, or clear cells, so you can make complex changes without editing each row.
 
@@ -1265,7 +1261,7 @@ In this optional task, you use **Bulk Edit** to apply several actions to a group
     The selected rows update in the sheet, and the count on the **Preview Changes** button increases.
 
 
-### Task 6: (Optional) Preview changes and save to the database
+### Task 6: Preview changes and save to the database
 
 In this optional task, you review pending changes, revert some of them, and then save the rest to the database. The **Preview Changes** and **Discard Changes** buttons are enabled whenever a change is pending. You can use them to check or undo edits before they reach the database.
 
@@ -1306,7 +1302,7 @@ In this optional task, you review pending changes, revert some of them, and then
     The pending changes are saved to the database. The **Save to Database** button is unavailable until you make another change.
 
 
-### Task 7: (Optional) Find and replace values
+### Task 7: Find and replace values
 
 In this optional task, you use the **Find and Replace** feature to find a value in a column and replace it with another value. This feature lets you standardize data, such as manufacturer names, across many rows at once.
 
@@ -1348,136 +1344,6 @@ In this optional task, you use the **Find and Replace** feature to find a value 
     The updated **Manufacturer** values are saved to the database.
 
 
-### Reference: Compare the row editing methods
-
-In this reference, you compare the features that each row editing method supports. Use the table to choose the right method for an editing task.
-
-| Feature | Row Editor | Form Editor (single row) | Form Editor (multiple rows) | Bulk Edit | Find and Replace |
-| --- | --- | --- | --- | --- | --- |
-| View existing field values | Yes | Yes | No | No | No |
-| Set a field value | Yes | Yes | Yes | Yes | Yes |
-| Clear a field value | Yes | Yes | No | Yes | Yes |
-| Offset field values (add, subtract, multiply, divide, prefix, suffix) | Yes, manually | No | No | Yes | No |
-| Replace text within existing text | Yes, manually | No | No | No | Yes |
-| Replace a value across multiple rows and columns in a single action | No | No | No | No | Yes |
-| Copy and paste values across multiple rows | Yes | N/A | N/A | N/A | N/A |
-| Fill down values to adjacent rows | Yes | N/A | N/A | N/A | N/A |
-| Preview changes | Yes | Yes | Yes | Yes | Yes |
-| Discard changes | Yes | Yes | Yes | Yes | Yes |
-
-### Task 8: (Optional) Import new phones
-
-In this optional task, you import new phone records from an Excel file into the **Assets** sheet. Importing lets you add many rows at once instead of entering each asset manually.
-
-1. In the **Assets** sheet, on the **PowerTable** tab, select **Import**.
-
-    The **Import** dialog box opens.
-
-1. In the **Import** dialog box, under **Files**, select **Excel**.
-
-    ![Screenshot 109](https://raw.githubusercontent.com/technofocus-pte/entrprsplnfrcIQdepth/refs/heads/main/Cloudslice/Labguides/Lab%2006/media/image109.png)
-
-1. Select **Continue**.
-
-    The **Import from file** dialog box opens.
-
-1. In the **Import from file** dialog box, select the **Click or drop files here** area.
-
-    ![Screenshot 110](https://raw.githubusercontent.com/technofocus-pte/entrprsplnfrcIQdepth/refs/heads/main/Cloudslice/Labguides/Lab%2006/media/image110.png)
-
-    >[!Note] You can upload only .xlsx files. The file size must not exceed 25 MB.
-
-1. In the file browser, go to the <VALUE> folder, and then select **assets.xlsx**.
-
-1. Select **Open**.
-
-    The **assets.xlsx** file appears in the **Import from file** dialog box.
-
-1. Select **Upload**.
-
-    ![Screenshot 111](https://raw.githubusercontent.com/technofocus-pte/entrprsplnfrcIQdepth/refs/heads/main/Cloudslice/Labguides/Lab%2006/media/image111.png)
-
-    The **Select Sheet** list appears in the **Import from file** dialog box.
-
-1. In the **Select Sheet** list, select the **Import** sheet.
-
-    ![Screenshot 112](https://raw.githubusercontent.com/technofocus-pte/entrprsplnfrcIQdepth/refs/heads/main/Cloudslice/Labguides/Lab%2006/media/image112.png)
-
-1. Select **Proceed**.
-
-    The **Import Rows** dialog box opens.
-
-1. In the **Import Rows** dialog box, review the rows on the **Insert (3)**, **Update (0)**, and **Error (0)** tabs.
-
-    PowerTable scans the file and lists three new rows on the **Insert (3)** tab: **IT-1410**, **IT-1411**, and **IT-1412**.
-
-1. Select **Import**.
-
-    ![Screenshot 113](https://raw.githubusercontent.com/technofocus-pte/entrprsplnfrcIQdepth/refs/heads/main/Cloudslice/Labguides/Lab%2006/media/image113.png)
-
-    The **Successfully imported rows** message appears in the **Import Rows** dialog box.
-
-1. Select **Close**.
-
-    ![Screenshot 114](https://raw.githubusercontent.com/technofocus-pte/entrprsplnfrcIQdepth/refs/heads/main/Cloudslice/Labguides/Lab%2006/media/image114.png)
-
-    The **Import Rows** dialog box closes.
-
-1. In the right pane, select the **Filter** icon.
-
-    The **Filter** panel opens and shows the **Page level** filter cards.
-
-1. In the **Filter** panel, select the **Asset Type** filter card.
-
-    The **Asset Type** filter card expands.
-
-1. Under **Asset Type**, on the **Basic** tab, select the **Phone** check box.
-
-    ![Screenshot 115](https://raw.githubusercontent.com/technofocus-pte/entrprsplnfrcIQdepth/refs/heads/main/Cloudslice/Labguides/Lab%2006/media/image115.png)
-
-    The **Assets** sheet shows the three newly imported phone records: **IT-1410**, **IT-1411**, and **IT-1412**.
-
-
-### Task 9: (Optional) Audit the asset changes
-
-In this optional task, you open the audit feature for the **Assets** sheet. Auditing helps you track the changes that users make to the asset data.
-
-1. In the **Assets** sheet, on the **PowerTable** tab, select **Audit**.
-
-    ![Screenshot 116](https://raw.githubusercontent.com/technofocus-pte/entrprsplnfrcIQdepth/refs/heads/main/Cloudslice/Labguides/Lab%2006/media/image116.png)
-
-    The audit feature opens for the **Assets** sheet.
-
-1. Select the **Data** tab.
-
-    The **Data** tab opens and lists the data changes made in the sheet.
-
-1. Scroll through the list to review the insert, update, and delete actions that you made during this session.
-
-    ![Screenshot 117](https://raw.githubusercontent.com/technofocus-pte/entrprsplnfrcIQdepth/refs/heads/main/Cloudslice/Labguides/Lab%2006/media/image117.png)
-
-    Each row shows the **Row Id**, **Action**, **Transaction ID**, **Source Type**, **Modified Column**, **Old Value**, **New Value**, **Updated At**, **Updated By**, and **Approved By** values for a change. You can use the following tools on this tab:
-    - **Download Logs** - Downloads the audit log.
-    - **All Users** - Filters the list by user.
-    - Time period list, for example **Last 24 Hours** - Filters the list by time period.
-    - **Search** - Searches the list.
-    - **Filter** - Creates a custom filter.
-
-
-1. Select the **Access** tab.
-
-    The **Access** tab opens and lists the changes made to the security settings.
-
-1. Scroll through the list to review the **Row Access** and **Column Access** changes that you made during this session.
-
-    ![Screenshot 118](https://raw.githubusercontent.com/technofocus-pte/entrprsplnfrcIQdepth/refs/heads/main/Cloudslice/Labguides/Lab%2006/media/image118.png)
-
-    Each row shows the **Log ID**, **Property**, **Description**, **Updated By**, and **Updated At** values for a change. This tab has the same tools as the **Data** tab: **Download Logs**, the **All Users** filter, the time period filter (for example, **Last 7 Days**), **Search**, and **Filter**.
-
-
-## Summary
-
-In this lab, you created a SQL database in Microsoft Fabric to manage your data. You then created a Fabric Plan item with a PowerTable sheet for each of the Assets, Employees, and Locations tables. You configured the Assets sheet with formatted columns and lookups. Finally, you ran update and insert operations, using a different approach for each operation.
 
 ## Summary
 
